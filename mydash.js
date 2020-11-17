@@ -74,3 +74,23 @@ function baseRange(start, end, step, fromRight) {
   }
   return result
 }
+
+function isEmpty(value) {
+    if (value == null) {
+      return true
+    }
+    
+		if (typeof value == 'number' || typeof value == 'boolean') {
+      return true
+    }
+
+    if (Array.isArray(value) || typeof value === 'string' || typeof value.splice === 'function') {
+      return !value.length
+    }
+
+    if (Object.keys(value).length === 0 && value.constructor === Object) {
+      return true
+    }
+
+  return false
+}
