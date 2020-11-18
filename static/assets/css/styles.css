@@ -1,0 +1,115 @@
+:root {
+  --main-shadow: 0px 20px 20px 1px rgba(0, 0, 0, 0.25);
+  --main-gradient-bg:  linear-gradient(140deg, rgba(206, 185, 254, 1) 0%, rgba(206, 185, 254, 1) 50%, rgba(184, 166, 228, 1) 50%, rgba(184, 166, 228, 0.8974252765098315) 88%, rgba(184, 166, 228, 1) 100%);
+  --accent-color: #FFEA5A;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+form input {
+  display: block;
+  width: 100%;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-bg {
+  background-image: var(--main-gradient-bg);
+}
+
+.container-small {
+  width: 100%;
+  max-width: 300px;
+}
+
+.title-area {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo {
+  max-width: 45px;
+  margin-right: 15px;
+}
+
+.login-form {
+  background-color: #ffffff;
+  box-shadow: var(--main-shadow);
+}
+
+.form-body {
+  padding: 75px 30px;
+}
+
+.btn-submit {
+  background-color: var(--accent-color);
+  text-align: center;
+  padding: 22px;
+  border: 0;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group label {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  font-family: 'Oswald',
+  sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  transition: all 0.3s linear;
+}
+
+.input-group input {
+  padding: 20px 5px 5px;
+  border: 0;
+  border-bottom: 1px solid #333;
+  background-color: transparent;
+  outline: none;
+}
+
+.input-group input:focus ~ label,
+.input-group input:not([value='']) ~ label {
+  font-size: 10px;
+  bottom: 25px;
+  color: #C4C4C4;
+}
