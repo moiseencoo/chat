@@ -1,0 +1,7 @@
+.chat-page {
+  display: flex;
+}
+
+.chats-area {
+  background-color: var(--dark-color);
+}

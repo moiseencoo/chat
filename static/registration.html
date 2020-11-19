@@ -6,15 +6,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/login.css">
-  <title>Вход</title>
+  <link rel="stylesheet" href="assets/css/registration.css">
+  <title>Регистрация</title>
 </head>
 <body>
   <main class="full-page main-bg">
     <div class="container-small">
         <div class="title-area">
           <img class="logo" src="assets/icons/chat.png" alt="">
-          <h1>Вход</h1>
+          <h1>Регистрация</h1>
         </div>
         <form class="user-form login-form">
           <div class="form-body">
@@ -27,7 +27,16 @@
               <label for="password">Пароль</label>
             </div>
           </div>
-          <input type="submit" class="btn-submit" value="Авторизоваться">
+          <div class="form-control-group">
+            <button class="btn-prev">Назад</button>
+            <button class="btn-next">Далее</button>
+          </div>
+          <div class="form-progress">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </form>
     </div>
   </main>
