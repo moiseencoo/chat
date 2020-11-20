@@ -4,4 +4,59 @@
 
 .chats-area {
   background-color: var(--dark-color);
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.profile-settings-area {
+  background: var(--main-dark-color);
+  width: 40px;
+  height: 100vh;
+}
+
+.chat-list li {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #ECECEC;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chat-list li.active,
+.chat-list li:hover {
+  background-color: var(--light-color);
+}
+
+.chat-info {
+  margin-left: 10px;
+  padding-right: 20px;
+}
+
+.chat-info span {
+  display: block;
+}
+
+.chat-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
+.chat-last-message {
+  font-size: 12px;
+}
+
+.chat-notification--new-msg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  font-size: 8px;
+  border-radius: 50%;
+  box-shadow: var(--main-shadow);
+  background-color: var(--accent-color);
 }
