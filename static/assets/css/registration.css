@@ -1,0 +1,42 @@
+.form-control-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-prev,
+.btn-next {
+  width: 50%;
+  text-align: center;
+  padding: 22px;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.btn-prev {
+  background-color: #fff;
+}
+
+.btn-next {
+  background-color: var(--accent-color);
+}
+
+.form-progress {
+  position: absolute;
+  display: flex;
+  bottom: -40px;
+  left: 0;
+}
+
+.form-progress span {
+  display: block;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #c4c4c4;
+  border-radius: 50%;
+}
+
+.form-progress span.active {
+  background-color: var(--accent-color);
+}

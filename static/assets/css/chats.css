@@ -1,0 +1,89 @@
+
+.chats-area {
+  background-color: var(--dark-color);
+  height: 100vh;
+  overflow: auto;
+}
+
+
+.chat-list li {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #ECECEC;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.chat-list li.active,
+.chat-list li:hover {
+  background-color: var(--light-color);
+}
+
+.chat-info {
+  margin-left: 10px;
+  padding-right: 20px;
+}
+
+.chat-info span {
+  display: block;
+}
+
+.chat-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
+.chat-last-message {
+  font-size: 12px;
+}
+
+.chat-notification--new-msg {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 10px;
+  right: 8px;
+  width: 16px;
+  height: 16px;
+  font-size: 8px;
+  border-radius: 50%;
+  box-shadow: var(--main-shadow);
+  background-color: var(--accent-color);
+}
+
+.chat-search {
+  padding: 25px 10px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.chat-search input {
+  padding: 10px;
+  border: 0;
+  font-size: 12px;
+  width: 100%;
+  outline: none;
+}
+
+.profile-settings-area {
+  justify-content: flex-end;
+}
+
+.profile-settings {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url(../icons/settings.svg);
+  background-size: contain;
+  margin-bottom: 20px;
+}
+
+.profile-logout {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url(../icons/log-out.svg);
+  background-size: contain;
+  margin-bottom: 5px;
+}
