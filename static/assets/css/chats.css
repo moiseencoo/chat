@@ -1,18 +1,10 @@
-.chat-page {
-  display: flex;
-}
 
 .chats-area {
   background-color: var(--dark-color);
-  max-height: 100vh;
+  height: 100vh;
   overflow: auto;
 }
 
-.profile-settings-area {
-  background: var(--main-dark-color);
-  width: 40px;
-  height: 100vh;
-}
 
 .chat-list li {
   position: relative;
@@ -59,4 +51,39 @@
   border-radius: 50%;
   box-shadow: var(--main-shadow);
   background-color: var(--accent-color);
+}
+
+.chat-search {
+  padding: 25px 10px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.chat-search input {
+  padding: 10px;
+  border: 0;
+  font-size: 12px;
+  width: 100%;
+  outline: none;
+}
+
+.profile-settings-area {
+  justify-content: flex-end;
+}
+
+.profile-settings {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url(../icons/settings.svg);
+  background-size: contain;
+  margin-bottom: 20px;
+}
+
+.profile-logout {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  background-image: url(../icons/log-out.svg);
+  background-size: contain;
+  margin-bottom: 5px;
 }
