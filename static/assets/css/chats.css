@@ -1,10 +1,10 @@
 
 .chats-area {
   background-color: var(--dark-color);
+  min-width: 280px;
   height: 100vh;
   overflow: auto;
 }
-
 
 .chat-list li {
   position: relative;
@@ -31,11 +31,11 @@
 
 .chat-name {
   font-family: 'Oswald', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .chat-last-message {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .chat-notification--new-msg {
@@ -43,18 +43,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 10px;
+  top: 25px;
   right: 8px;
   width: 16px;
   height: 16px;
-  font-size: 8px;
+  font-size: 7px;
   border-radius: 50%;
   box-shadow: var(--main-shadow);
   background-color: var(--accent-color);
 }
 
+.chat-time {
+  font-size: 9px;
+  color: #666;
+}
+
 .chat-search {
-  padding: 25px 10px;
+  padding: 20px 10px;
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -86,4 +91,146 @@
   background-image: url(../icons/log-out.svg);
   background-size: contain;
   margin-bottom: 5px;
+}
+
+.chat-open-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.chat-open-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 6px 15px;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.chat-open-header-user {
+  display: flex;
+  align-items: center;
+}
+
+.chat-open-header-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.chat-open-header-avatar img{
+  max-width: 100%;
+}
+
+.chat-open-header-name {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+.chat-open-header-options {
+  width: 6px;
+  height: 15px;
+  background-image: url(../icons/more.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  outline: none;
+}
+
+.chat-open-messages {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 30px 40px;
+}
+
+.chat-open-message-date {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #999999;
+  padding: 10px;
+}
+
+.chat-open-messages p {
+  max-width: 375px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  color: #333333;
+  white-space: pre-line;
+  font-family: 'Oswald', sans-serif;
+  padding: 20px 40px 10px 20px;
+}
+
+.chat-open-message-left {
+  background-color: #E7DCFF;
+  border-radius: 0px 20px 20px 20px;
+}
+
+.chat-open-message-time {
+  display: block;
+  text-align: right;
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 300;
+}
+
+.chat-open-message-right {
+  margin-left: auto;
+  background-color: #FFF3A0;
+  border-radius: 20px 20px 0px 20px;
+}
+
+p.single-line {
+  padding: 9px 17px 12px 24px;
+  max-width: max-content;
+}
+
+.single-line span {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.chat-open-input-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-top:  1px solid #ECECEC;
+}
+
+.chat-open-input-area button {
+  min-width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.chat-open-textarea {
+  border: 0;
+  padding: 10px 25px;
+  resize: none;
+  width: 100%;
+  outline: none;
+}
+
+.chat-open-uploader {
+  background-image: url(../icons/attachment.svg);
+  background-color: var(--accent-color);
+  background-size: 20px;
+}
+
+.chat-open-send {
+  background-image: url(../icons/send.svg);
+  background-color: var(--main-dark-color);
+  background-size: 20px 30px;
 }
